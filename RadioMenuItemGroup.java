@@ -83,13 +83,13 @@ public class RadioMenuItemGroup
 				public void itemStateChanged(ItemEvent e)
 				{
 					if ( e.getStateChange() == ItemEvent.SELECTED )
-						radio.getRadioMenuItemGroup().setSelectedCheckbox(radio);
+						radio.getRadioMenuItemGroup().setSelectedRadioMenuItem(radio);
 				}
 			});
 		}
 		if ( radio.getState() )
 		{
-			setSelectedCheckbox( radio );
+			setSelectedRadioMenuItem( radio );
 		}
 	}
 }

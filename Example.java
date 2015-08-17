@@ -25,7 +25,7 @@ public class Example
         {
 
             final PopupMenu popup = new PopupMenu();
-            final Image image = Toolkit.getDefaultToolkit().getImage("icon.png");
+            final Image image = Toolkit.getDefaultToolkit().getImage("icon.gif");
             final TrayIcon trayIcon = new TrayIcon(image, "Tray Icon");
             final SystemTray tray = SystemTray.getSystemTray();
 
