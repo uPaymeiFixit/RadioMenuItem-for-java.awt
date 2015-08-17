@@ -77,19 +77,20 @@ public class RadioMenuItemGroup
 		else
 		{
 			radios.add(radio);
-			radio.addItemListener( new ItemListener()
+			radios.get(radios.size()-1).addItemListener( new ItemListener()
 			{
 				@Override
 				public void itemStateChanged(ItemEvent e)
 				{
 					if ( e.getStateChange() == ItemEvent.SELECTED )
-						radio.getRadioMenuItemGroup().setSelectedRadioMenuItem(radio);
+						radios.get(radios.size()-1).getRadioMenuItemGroup().setSelectedRadioMenuItem(radios.get(radios.size()-1));
 				}
 			});
-		}
-		if ( radio.getState() )
-		{
-			setSelectedRadioMenuItem( radio );
+
+			if ( radio.getState() )
+			{
+				setSelectedRadioMenuItem( radio );
+			}
 		}
 	}
 }
