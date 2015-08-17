@@ -3,7 +3,7 @@ A RadioMenuItem and RadioMenuItemGroup class that extends java.awt.CheckboxMenuI
 
 java.awt does not have a RadioMenuItem which can be used with the System Tray, so I made one. This class extends java.awt.CheckboxMenuItem, and therefore acts very similar. The difference is that only one radio menu item can be checked per group. 
 
-##Documentation
+##RadioMenuItem Documentation
 
 ####Constructor Summary
 `RadioMenuItem()`
@@ -30,6 +30,22 @@ Sets the radio menu item's group.
 
 ####Inherited Methods
 See the [CheckboxMenuItem Javadoc](http://docs.oracle.com/javase/7/docs/api/java/awt/CheckboxMenuItem.html).
+
+##RadioMenuItemGroup Documentation
+
+####Constructor Summary
+`RadioMenuItemGroup()`
+Create a new instance of RadioMenuItemGroup.
+
+####Method Summary
+`RadioMenuItem getSelectedRadioMenuItem()`
+Gets the currently selected radio menu item from the group. If all items are in the "off" state, null is returned.
+
+`void setSelectedRadioMenuItem(RadioMenuItem radio)`
+Sets the currently selected radio menu item in this group to be the specified radio menu item. If the radio argument is null, all radio menu items in this group will be deselected. Note: this will not invoke a call to an ItemListener.
+
+`String toString()`
+Returns a string representation of this radio menu item group, including the labels and currect selection values.
 
 ##Usage
 
