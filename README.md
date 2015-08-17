@@ -52,4 +52,5 @@ Returns a string representation of this radio menu item group, including the lab
 Place the RadioMenuItem.java and RadioMenuItemGroup.java files in your class path. 
 
 ##Example
-Check out Example.java to see a working example.
+Check out Example.java to see a working example. If everything goes well, the Exmaple should look like this: 
+![Image of Example](http://i.imgur.com/Int4Qo3.png)
