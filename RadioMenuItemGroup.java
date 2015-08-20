@@ -19,7 +19,7 @@ public class RadioMenuItemGroup
 	// Default methods from java.awt.CheckboxGroup
 	public RadioMenuItemGroup()
 	{
-		radios = new ArrayList<>();
+		radios = new ArrayList<RadioMenuItem>();
 	}
 
 	// Gets the current choice from this radio menu item group. The current
